@@ -59,7 +59,7 @@ The following diagram illustrates the flow of data from the User to the Memora b
 ```mermaid
 graph TD
     %% User Input Layer
-    U([User]) -->|Chat / Web Speech API Voice| UI[Lovable Frontend UI]
+    U([User]) -->|Chat / Web Speech API Voice| UI[Figma Dev Mode Frontend UI]
     UI -->|Text Payload| API[FastAPI /api/chat]
 
     %% Governance & Security Layer (Tier Control)
@@ -116,7 +116,7 @@ graph TD
 ### Flow Breakdown & Agent Schemas
 
 1. **User Input & Tier Middleware**:
-   The user sends a message or uses browser-native voice via the Lovable UI. The payload arrives at FastAPI. Before any LLM processing happens, `core/security.py` checks the user's `subscription_tier` against their `daily_usage_logs` stored in PostgreSQL. If caps are exceeded, a 429 response is triggered immediately.
+   The user sends a message or uses browser-native voice via the Figma Dev Mode generated UI. The payload arrives at FastAPI. Before any LLM processing happens, `core/security.py` checks the user's `subscription_tier` against their `daily_usage_logs` stored in PostgreSQL. If caps are exceeded, a 429 response is triggered immediately.
 
 2. **Intent Routing**:
    The input reaches `agents/router.py`. Here, a lightweight intent classification prompt decides which specialized sub-agent the user needs. 

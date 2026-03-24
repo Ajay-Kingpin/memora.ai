@@ -4,7 +4,7 @@ Memora is a distributed AI cognitive platform built on a memory-first, agent-dri
 
 ## Core Technology Stack
 - **Backend**: Python, FastAPI, Antigravity (Backend framework/toolkit)
-- **Frontend**: TypeScript/JavaScript, Lovable (Frontend framework/UI toolkit)
+- **Frontend**: TypeScript/JavaScript, Figma Dev Mode (Frontend design-to-code workflow)
 - **LLM**: GPT-5 mini, Gemini 2.5 flash lite (Phase 1), Google Gemini (Flash Pro/Ultra variants) (Future)
 - **Vector Database**: Pinecone (Phase 1), Qdrant (Future scalability)
 - **Metadata Database**: PostgreSQL
@@ -27,7 +27,7 @@ Memora is a distributed AI cognitive platform built on a memory-first, agent-dri
     - Tech: FastAPI Cron Jobs, Google Calendar API.
 - **Layer 4: Interface Layer**: 
     - Components: Chat UI, Memory Timeline, Dashboard.
-    - Tech: Lovable + TypeScript.
+    - Tech: Figma Dev Mode + TypeScript.
 - **Layer 5: Governance & Security**: 
     - Components: Basic OAuth, single-user access.
     - Tech: Auth0 or JWT via FastAPI.
@@ -49,7 +49,7 @@ Memora is a distributed AI cognitive platform built on a memory-first, agent-dri
     - Tech: Temporal/Airflow for workflows.
 - **Layer 4: Interface Layer**: 
     - Components: Team/Admin dashboards, Developer APIs.
-    - Tech: Lovable, FastAPI.
+    - Tech: Figma Dev Mode generated UI, FastAPI.
 - **Layer 5: Governance & Security**: 
     - Components: RBAC, Audit logs, Multi-tenant IAM.
     - Tech: OAuth2, Zero Trust principles.
@@ -71,7 +71,7 @@ Memora is a distributed AI cognitive platform built on a memory-first, agent-dri
     - Tech: ROS2 (Python/C++ bindings), <10ms latency runtime.
 - **Layer 4: Interface Layer**: 
     - Components: Robot SDK, Fleet Control Dashboard.
-    - Tech: gRPC/Protobuf, Lovable.
+    - Tech: gRPC/Protobuf, TypeScript via Figma Dev Mode.
 - **Layer 5: Governance & Security**: 
     - Components: Robot safety constraints, hardware-level kill-switches.
     - Tech: Signed commands, local policy enforcement.

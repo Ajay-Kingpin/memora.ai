@@ -32,32 +32,33 @@ This document outlines the technical architectural layer-wise tasks required to 
     - [x] Implement context management and agent hand-offs.
 
 ## Layer 3: Automation & Execution Engine (Workflow Layer)
-- [ ] **Background Workers**
-    - [ ] Setup FastAPI BackgroundTasks or Celery for non-blocking operations.
-    - [ ] Implement file processing pipeline (PDF/Text extraction for Learning Vault).
-- [ ] **External Integrations**
-    - [ ] Integrate Google Calendar API for "Personal Task Agent" actions.
-    - [ ] Setup Email/SMS notification service for habit reminders.
-- [ ] **Scheduling**
-    - [ ] Implement APScheduler/Cron jobs for:
-        - [ ] Daily habit reminders.
-        - [ ] Weekly memory digests/summaries.
-        - [ ] Periodic habit reflections.
+- [x] **Background Workers**
+    - [x] Setup FastAPI BackgroundTasks or Celery for non-blocking operations.
+    - [x] Implement file processing pipeline (PDF/Text extraction for Learning Vault).
+- [x] **External Integrations**
+    - [x] Integrate Google Calendar API for "Personal Task Agent" actions.
+    - [x] Setup Email/SMS notification service for habit reminders.
+- [x] **Scheduling**
+    - [x] Implement APScheduler/Cron jobs for:
+        - [x] Daily habit reminders.
+        - [x] Weekly memory digests/summaries.
+        - [x] Periodic habit reflections.
+
 
 ## Layer 4: Interface Layer (User Experience)
-- [ ] **Backend API (FastAPI)**
-    - [ ] `/api/chat`: Implement streaming endpoint for real-time interaction.
-    - [ ] `/api/memories`: Implement CRUD with semantic search filtering.
-    - [ ] `/api/learning`: Implement file upload and management endpoints.
-    - [ ] `/api/habits` & `/api/decisions`: Implement feature-specific CRUD.
-    - [ ] `/api/voice`: Setup WebSocket or POST for audio processing.
-- [ ] **Frontend (Lovable + TypeScript)**
+- [x] **Backend API (FastAPI)**
+    - [x] `/api/chat`: Implement streaming endpoint for real-time interaction.
+    - [x] `/api/memories`: Implement CRUD with semantic search filtering.
+    - [x] `/api/learning`: Implement file upload and management endpoints.
+    - [x] `/api/habits` & `/api/decisions`: Implement feature-specific CRUD.
+    - [x] `/api/voice`: Setup WebSocket or POST for audio processing.
+- [ ] **Frontend (Figma Dev Mode + TypeScript)**
     - [ ] **Shell**: Navigation, Sidebar, User Profile.
     - [ ] **Neural Chat**: Real-time chat UI with Markdown and typing indicators.
     - [ ] **Memory Timeline**: Chronological feed with search and importance filters.
     - [ ] **Learning Vault**: Artifact grid view + Category management.
-    - [ ] **Habit Dashboard**: Streak visualization and completion tracking.
-    - [ ] **Decision UI**: Structured input forms and comparison displays.
+    - [ ] **Habit & Goals**: Streak visualization and completion tracking.
+    - [ ] **Decision Lab**: Structured input forms and comparison displays.
 - [ ] **Voice Integration**
     - [ ] Implement browser-native Web Speech API for voice capture and transcription.
     - [ ] Integrate text output with GPT-5 mini and Gemini 2.5 flash lite API client flows.
@@ -80,7 +81,7 @@ This document outlines the technical architectural layer-wise tasks required to 
     - [ ] Configure `.replit` and `replit.nix` for a unified Python/FastAPI and Node.js environment.
     - [ ] Setup **Replit Secrets** for GPT-5 mini and Gemini 2.5 flash lite API Keys, Pinecone API Key, and DB credentials.
     - [ ] Provision and connect **Replit's managed PostgreSQL** database.
-    - [ ] Configure Replit's web server settings to serve the Lovable frontend and FastAPI backend.
+    - [ ] Configure Replit's web server settings to serve the Figma Dev Mode generated frontend and FastAPI backend.
 - [ ] **Validation**
     - [ ] Perform End-to-End testing of the "Chat -> Memory Detection -> Timeline" flow.
     - [ ] Verify multi-modal inputs (Voice/File Uploads).
